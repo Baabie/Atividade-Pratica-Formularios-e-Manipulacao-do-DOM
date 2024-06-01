@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 30px;
+}
+
+
+fieldset {
+    padding: 12px;
+    width: 40%;
+    margin: 30px;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 20px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 20px;
+}
+
+.btn-reset {
+    margin-left: 30px;
+}

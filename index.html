@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário elaborado</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    
+    <main>
+        <form id="form-cadastro">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Nome da rua" required>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" class="input" required>
+                        <option value="">Selecione um estado...</option>
+                        <option value="RS">RS</option>
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                </div>
+            </fieldset>
+
+                
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>Natureza do Cargo</p>
+
+                <div class="radio">
+                    <div>
+                        <input type="radio" name="stacks" id="gerencia" value="1" checked>
+                        <label for="gerencia">Gerência</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="stacks" id="financeiro" value="2">
+                        <label for="financeiro">Financeiro</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="stacks" id="recepcao" value="3">
+                        <label for="recepcao">Recepação</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="stacks" value="4">
+                        <label for="administrativo">Administrativo</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="stacks" value="5">
+                        <label for="juridico">Jurídico</label>
+                    </div>
+                </div>
+
+
+                <p>Área de interesse</p>
+
+                    <div class="checkbox">
+
+                        <div>
+                            <input type="checkbox" name="check" value="comp">
+                            <label for="computacao">Computação</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="check" value="bio">
+                            <label for="biologia">Biologia</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="check" value="ambiente">
+                            <label for="ambiente">Meio Ambiente</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="check" value="eng">
+                            <label for="engenharia">Engenharia</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check" value="his">
+                            <label for="historia">História</label>
+                        </div>
+                        
+                    </div>
+                        
+                    <div>   
+                        <label for="sobre">Mini currículo</label>
+                        <textarea name="sobre" id="sobre" class="input" rows="6" cols="50" maxlength="500"></textarea>
+                    </div> 
+                </fieldset>
+
+                <div class="form-actions">
+                    <input type="reset" class="btn-reset" />
+                    <input type="submit" class="btn-submit" />
+                </div>
+            </form>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
